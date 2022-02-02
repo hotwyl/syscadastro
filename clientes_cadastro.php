@@ -16,24 +16,19 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.php">DashBoard</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Lista Clientes</li>
+                    <li class="breadcrumb-item"><a href="clientes.php">Lista Clientes</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Cadastro Cliente</li>
                 </ol>
             </nav>
 
             <section class="d-flex justify-content-evenly py-3">
                 <h2 class="text-center">
-                    Lista de Clientes <i class="fa fa-users"></i>
+                    Cadastrar Novo Cliente <i class="fa fa-user-plus"></i>
                 </h2>
-
-                <h5 class="text-end">
-                    <a href="clientes_cadastro.php" class="btn btn-primary btn-sm">
-                        <i class="fa fa-user-plus"></i>
-                    </a>
-                </h5>
             </section>
 
             <section>
-                <?php include_once __DIR__ . '/includes/clientes_lista.php' ?>
+                <?php include_once __DIR__.'/includes/clientes_form_cadastro.php' ?>
             </section>
 
     </main>
